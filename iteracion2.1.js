@@ -46,19 +46,3 @@ button$.addEventListener('click', search);
 
 
 
-
-                const baseUrl = 'https://api.nationalize.io/?name=';
-
-                const input$$ = document.querySelector('input');
-                
-                const search = () => {
-                
-                    fetch(baseUrl + input$$.value).then(res => res.json()).then(res =>{
-                        console.log(res);
-                    })
-                }
-                
-                
-                const button$ = document.querySelector('button');
-                
-                button$.addEventListener('click', search);
